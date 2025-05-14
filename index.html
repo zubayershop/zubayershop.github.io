@@ -2,51 +2,96 @@
 <html lang="bn">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zubayer's Shop</title>
   <style>
-    body { font-family: sans-serif; margin: 0; padding: 0; background: #f7f7f7; }
-    header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
-    nav { background: #34495e; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; }
-    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; padding: 20px; }
-    .product { background: white; border-radius: 8px; padding: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .product img { width: 100%; height: auto; border-radius: 5px; }
-    footer { background: #2c3e50; color: white; text-align: center; padding: 10px; }
-    .btn { background: #e67e22; color: white; padding: 10px; display: inline-block; border-radius: 5px; text-decoration: none; }
+    body {
+      font-family: sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      background: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 10px;
+      padding: 10px;
+    }
+    .product {
+      background: white;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .btn {
+      background: #e67e22;
+      color: white;
+      padding: 8px 12px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 5px;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #2c3e50;
+      color: white;
+    }
   </style>
 </head>
 <body>
 
 <header>
   <h1>Zubayer's Shop</h1>
-  <p>সব পণ্য এক জায়গায়</p>
+  <p>স্বাগতম আমাদের অনলাইন দোকানে!</p>
 </header>
 
 <nav>
-  <a href="#">মোবাইল</a>
-  <a href="#">কম্পিউটার</a>
-  <a href="#">ঘরোয়া জিনিস</a>
-  <a href="#">আরও</a>
+  <a href="#">জুতা</a>
+  <a href="#">জামা</a>
+  <a href="#">ডিজিটাল</a>
+  <a href="#">এক্সেসরিজ</a>
 </nav>
 
 <section class="products">
   <div class="product">
-    <img src="https://via.placeholder.com/200x150" alt="Product 1" />
-    <h3>Product 1</h3>
-    <p>৳ ৫০০</p>
-    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdF91gjjngQDqttBslwpi_1OYYKKssiVqE4ycW2GutT5GpsNg/viewform?usp=header" target="_blank">অর্ডার করুন</a>
+    <img src="https://via.placeholder.com/150" alt="Product 1">
+    <h3>প্রোডাক্ট ১</h3>
+    <p>৳১২০০</p>
+    <a href="https://forms.gle/your-order-link" class="btn">অর্ডার করো</a>
   </div>
   <div class="product">
-    <img src="https://via.placeholder.com/200x150" alt="Product 2" />
-    <h3>Product 2</h3>
-    <p>৳ ৭৫০</p>
-    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdF91gjjngQDqttBslwpi_1OYYKKssiVqE4ycW2GutT5GpsNg/viewform?usp=header" target="_blank">অর্ডার করুন</a>
+    <img src="https://via.placeholder.com/150" alt="Product 2">
+    <h3>প্রোডাক্ট ২</h3>
+    <p>৳২৫০০</p>
+    <a href="https://forms.gle/your-order-link" class="btn">অর্ডার করো</a>
   </div>
 </section>
 
 <footer>
-  &copy; 2025 Zubayer's Shop. All rights reserved.
+  &copy; ২০২৫ Zubayer's Shop. All rights reserved.
 </footer>
 
 </body>

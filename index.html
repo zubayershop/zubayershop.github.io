@@ -1,98 +1,82 @@
-<!DOCTYPE html>
-<html lang="bn">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zubayer's Shop</title>
   <style>
-    body {
-      font-family: sans-serif;
-      background: #f7f7f7;
-      margin: 0;
-    }
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 10px;
-      text-align: center;
-    }
-    nav {
-      background: #34495e;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 10px;
-      padding: 10px;
-    }
-    .product {
-      background: white;
-      border-radius: 8px;
-      padding: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .product img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
-    .btn {
-      background: #e67e22;
-      color: white;
-      padding: 8px 12px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 5px;
-      border-radius: 5px;
-    }
-    footer {
-      text-align: center;
-      padding: 10px;
-      background: #2c3e50;
-      color: white;
+    body { font-family: sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #333; color: white; padding: 10px 20px; text-align: center; }
+    section { padding: 20px; }
+    .category { margin-bottom: 40px; }
+    h2 { color: #222; border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+    .product { background: white; border-radius: 8px; box-shadow: 0 0 10px #ccc; padding: 15px; margin: 10px; display: inline-block; width: 45%; vertical-align: top; }
+    .details { margin-top: 10px; font-size: 14px; color: #444; }
+    .price { font-weight: bold; color: green; }
+    .contact { margin-top: 20px; font-size: 16px; }
+    .contact a { color: #0066cc; text-decoration: none; font-weight: bold; }
+    footer { background: #222; color: white; padding: 20px; text-align: center; }
+    @media (min-width: 768px) {
+      .product { width: 22%; }
     }
   </style>
 </head>
 <body>
-
-<header>
-  <h1>Zubayer's Shop</h1>
-  <p>স্বাগতম আমাদের অনলাইন দোকানে!</p>
-</header>
-
-<nav>
-  <a href="#">জুতা</a>
-  <a href="#">জামা</a>
-  <a href="#">ডিজিটাল</a>
-  <a href="#">এক্সেসরিজ</a>
-</nav>
-
-<section class="products">
-  <div class="product">
-    <img src="https://via.placeholder.com/150" alt="Product 1">
-    <h3>প্রোডাক্ট ১</h3>
-    <p>৳১২০০</p>
-    <a href="https://forms.gle/your-order-link" class="btn">অর্ডার করো</a>
-  </div>
-  <div class="product">
-    <img src="https://via.placeholder.com/150" alt="Product 2">
-    <h3>প্রোডাক্ট ২</h3>
-    <p>৳২৫০০</p>
-    <a href="https://forms.gle/your-order-link" class="btn">অর্ডার করো</a>
-  </div>
-</section>
-
-<footer>
-  &copy; ২০২৫ Zubayer's Shop. All rights reserved.
-</footer>
-
+  <header>
+    <h1>Zubayer's Shop</h1>
+    <p><a style="color:yellow; text-decoration:underline;" href="https://docs.google.com/forms/d/e/1FAIpQLSdF91gjjngQDqttBslwpi_1OYYKKssiVqE4ycW2GutT5GpsNg/viewform?usp=header">অর্ডার করতে এখানে ক্লিক করুন</a></p>
+  </header>  <section class="category">
+    <h2>জামাকাপড়</h2>
+    <div class="product">
+      <h3>Men's T-Shirt</h3>
+      <div class="price">৳350</div>
+      <div class="details">100% Cotton, Premium Quality</div>
+    </div>
+    <div class="product">
+      <h3>Women's Kurti</h3>
+      <div class="price">৳700</div>
+      <div class="details">Stylish Long Kurti</div>
+    </div>
+  </section>  <section class="category">
+    <h2>জুতো</h2>
+    <div class="product">
+      <h3>Sports Shoes</h3>
+      <div class="price">৳1,200</div>
+      <div class="details">Comfortable for running</div>
+    </div>
+    <div class="product">
+      <h3>Ladies Sandal</h3>
+      <div class="price">৳650</div>
+      <div class="details">Trendy & Light</div>
+    </div>
+  </section>  <section class="category">
+    <h2>ডিজিটাল প্রোডাক্ট</h2>
+    <div class="product">
+      <h3>Wireless Earbuds</h3>
+      <div class="price">৳1,800</div>
+      <div class="details">Noise Cancellation</div>
+    </div>
+    <div class="product">
+      <h3>Smart Watch</h3>
+      <div class="price">৳2,500</div>
+      <div class="details">Heart Rate Monitor</div>
+    </div>
+  </section>  <section class="category">
+    <h2>এক্সেসরিজ</h2>
+    <div class="product">
+      <h3>Backpack</h3>
+      <div class="price">৳1,000</div>
+      <div class="details">Waterproof Material</div>
+    </div>
+    <div class="product">
+      <h3>Phone Stand</h3>
+      <div class="price">৳300</div>
+      <div class="details">Foldable & Portable</div>
+    </div>
+  </section>  <section class="contact">
+    <p>যেকোনো সমস্যায় <a href="https://wa.me/+8801779038337" target="_blank">WhatsApp</a> এ যোগাযোগ করুন।</p>
+    <p>২৪ ঘন্টা সার্ভিস দেওয়া হয়।</p>
+  </section>  <footer>
+    <p>&copy; 2025 Zubayer's Shop. All rights reserved.</p>
+  </footer>
 </body>
 </html>
